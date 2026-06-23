@@ -4,41 +4,29 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English Zone Academy</title>
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Premium Tajawal Font -->
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 <style> 
+html {
+    scroll-behavior: smooth;
+}
 </style>
 </head>
 <body>
-
-
-
     <nav class="navbar">
         <div class="navbar-brand">
             <i class="fas fa-graduation-cap"></i>
             <div>English Zone <span>Academy</span></div>
         </div>
     </nav>
-
     <header class="hero-section">
             <br>
-            
             <br>
             <br>
             <br>
             <br>
             <br>
-            <
-        
-          
-
-            
-            
-            
-
         <div class="logo-box">
             <i> <img src="photo/ChatGPT Image Jun 21, 2026, 10_22_06 PM.png" alt="" width="400" height="880" style=" .header-container {
     display: flex;
@@ -53,19 +41,11 @@
 ></i>
         </div>
         <br>
-          
-            
-            
-            
-            
-        
-
-        
+    
         <a href="#courses" class="explore-btn">
             عرض البرامج والباكدجات <i class="fas fa-arrow-down"></i>
         </a>
     </header>
-
     <main class="main-container" id="courses">
         <div class="section-header">
                     <p style="text-align: ;">الوجهة التعليمية الأفضل لتطوير المهارات اللغوية والتأسيس الاحترافي لجميع الأعمار والمراحل الدراسية بأحدث المناهج التفاعلية الذكية.</p>
@@ -73,40 +53,32 @@
             <h2>اختر باكدج التدريب الخاص بك</h2>
             <p>اضغط على أي زر بالأسفل لعرض تفاصيل الكورس الشاملة والأسعار المتاحة فوراً.</p>
         </div>
-
         <div class="course-selector">
-            <button class="selector-btn" onclick="switchTab(event, 'business-english-pkg')" style="border-color: #0b1a30; font-family: Arial, Helvetica, sans-serif; background-color: #284064; color: #caccce;">
+            <button class="selector-btn" onclick="switchTab(event, 'business-english-pkg'); setTimeout(() => { window.location.href='#business-english-pkg'; }, 50);" style="border-color: #0b1a30; font-family: Arial, Helvetica, sans-serif; background-color: #284064; color: #caccce;">
                 <i ></i> Business English
             </button>
-
-            <button class="selector-btn" onclick="switchTab(event, 'adults')"style="border-color: #0b1a30; font-family: Arial, Helvetica, sans-serif; background-color: #d8cc21; color: #284064; >
+            <button class="selector-btn" onclick="switchTab(event, 'adults'); setTimeout(() => { window.location.href='#adults'; }, 50);" style="border-color: #0b1a30; font-family: Arial, Helvetica, sans-serif; background-color: #d8cc21; color: #284064;">
                 <i class="fas fa-briefcase"></i> General English
-
             </button>
-
-            <button class="selector-btn" onclick="switchTab(event, 'speaking-teenagers')" style="border-color: #0b1a30; font-family: Arial, Helvetica, sans-serif; background-color: #284064; color: #dbeafe;">
+            <button class="selector-btn" onclick="switchTab(event, 'speaking-teenagers'); setTimeout(() => { window.location.href='#speaking-teenagers'; }, 50);" style="border-color: #0b1a30; font-family: Arial, Helvetica, sans-serif; background-color: #284064; color: #dbeafe;">
                 <i ></i>  Teenagers
             </button>
-
-            <button class="selector-btn" onclick="switchTab(event, 'intensive')" style="border-color: #0b1a30; font-family: Arial, Helvetica, sans-serif; background-color: #d8cc21; color: #284064;">
+            <button class="selector-btn" onclick="switchTab(event, 'intensive'); setTimeout(() => { window.location.href='#intensive'; }, 50);" style="border-color: #0b1a30; font-family: Arial, Helvetica, sans-serif; background-color: #d8cc21; color: #284064;">
                 <i "></i> Kids 
           </button>
-            <button class="selector-btn" onclick="switchTab(event, 'school')"style="border-color: #284064; background-color: #284064; color: #dbeafe; >
+            <button class="selector-btn" onclick="switchTab(event, 'school'); setTimeout(() => { window.location.href='#school'; }, 50);" style="border-color: #284064; background-color: #284064; color: #dbeafe;">
                 <i class="fas fa-user-graduate"></i> الإعدادي والثانوي
             </button>
             
-            <button class="selector-btn" onclick="switchTab(event, 'german')"style="border-color: #0b1a30; font-family: Arial, Helvetica, sans-serif; background-color: #d8cc21;>
+            <button class="selector-btn" onclick="switchTab(event, 'german'); setTimeout(() => { window.location.href='#german'; }, 50);" style="border-color: #0b1a30; font-family: Arial, Helvetica, sans-serif; background-color: #d8cc21;">
                 <i class="fas fa-globe-europe"></i> German 
             </button>
-            <button class="selector-btn" onclick="switchTab(event, 'online')"style="border-color: #0b1a30; background-color: #284064; color: #dbeafe;>
+            <button class="selector-btn" onclick="switchTab(event, 'online'); setTimeout(() => { window.location.href='#online'; }, 50);" style="border-color: #0b1a30; background-color: #284064; color: #dbeafe;">
                 <i class="fas fa-wifi"></i> Online courses
             </button>
             
-            
-            
         </div>
 
-        <!-- Intensive Course Panel -->
         <div id="intensive" class="content-display-panel">
             <div class="panel-meta">
                 <h3 class="panel-title">باكدج الkids المكثف : </h3>
@@ -154,7 +126,6 @@
             </div>
         </div>
 
-        <!-- School Support Panel -->
         <div id="school" class="content-display-panel">
             <div class="panel-meta">
                 <h3 class="panel-title">باكدج الإعدادي والثانوي : <div class=""></div><div class=""></div></h3>
@@ -200,15 +171,12 @@
             </div>
         </div>
 
-        <!-- Adults Panel -->
         <div id="adults" class="content-display-panel">
             <div class="panel-meta">
-                <h3 class="panel-title">General English
+                <h3 class="panel-title"> كورس General English : 
 </h3>
              <img src="photo/جيرنال.jpeg" alt="" width="300" height="200" style="border-style: groove; border-radius: 15px;">
-               
             </div>
-
             <h4 style="color: var(--accent-blue); margin: 20px 0 8px 0;">  General English</h4>
             <p>كورس لتطوير اللغة الإنجليزية بشكل عام وشامل في كافة النواحي الحياتية ويشمل المهارات التدريبية:</p>
             <ul class="features-list">
@@ -239,9 +207,6 @@
         <span class="current-price" style="color: #e00000 !important;">6000 جنيه</span>
     </div>
 </div>
-
-
-       
             <div class="action-button-wrapper">
                 <button class="enroll-now-btn" onclick="triggerEnrollmentModal('Adults', [
                     {label: 'General English', value: 'General English', price: ''},
@@ -249,8 +214,6 @@
                 ])">اشترك الآن</button>
             </div>
         </div>
-
-        <!-- German Panel -->
         <div id="german" class="content-display-panel">
             <div class="panel-meta">
                 <h3 class="panel-title">كورس اللغة الألمانية :</h3>
@@ -260,7 +223,6 @@
                 <li><strong>تفاصيل الباكدج:</strong> مدة 3 شهور كاملة.</li>
                 <li><strong>النظام الدراسي:</strong> محاضرتين أسبوعيآ، مدة المحاضره ساعتين (إجمالي 50 ساعة تدريبية متكاملة).</li>
             </ul>
-
             <h4 style="margin: 20px 0 10px 0; color: var(--primary-blue);">مميزات كورس الألماني في الأكاديمية:</h4>
             <ul class="features-list">
                 <li>مستويات دقيقة ومناسبة لكل الأعمار والمستويات (مبتدئ – متوسط – متقدم).</li>
@@ -281,13 +243,11 @@
                 </div>
             </div>
 
-
             <div class="action-button-wrapper">
                 <button class="enroll-now-btn" onclick="triggerEnrollmentModal('German', [])">اشترك الآن</button>
             </div>
         </div>
 
-        <!-- Online Panel -->
         <div id="online" class="content-display-panel">
             <div class="panel-meta">
                 <h3 class="panel-title"> الكورسات الأونلاين :</h3>
@@ -296,7 +256,6 @@
 
                 <p style="color: var(--text-muted); margin-top: 5px;"><strong>تفاصيل باكدج الأونلاين:</strong> مدة 3 شهور كاملة — 50 ساعة تدريبية مكثفة وتفاعلية (محاضرتين أسبوعيًا — مدة المحاضرة ساعتين).</p>
             </div>
-
             <h4 style="margin: 20px 0 10px 0; color: var(--primary-blue);">خيارات المجموعات المتاحة والأسعار:</h4>
             <ul class="features-list">
                 <li><strong>Group (من 8 إلى 10 أفراد):</strong> 2500 جنيه فقط للباكدج.</li>
@@ -319,7 +278,6 @@
             </div>
         </div>
 
-        <!-- Business English Pkg Panel -->
         <div id="business-english-pkg" class="content-display-panel">
             <div class="panel-meta">
                 <h3 class="panel-title">كورس Business English :</h3>
@@ -328,7 +286,6 @@
                 <p>مناسب للموظفين وأصحاب الأعمال والباحثين عن فرص عمل أفضل أو الراغبين في تطوير مهارات التواصل المهني باللغة الإنجليزية.</p>
                 
             </div>
-
             <h4 style="margin: 20px 0 10px 0; color: var(--primary-blue);">يشمل:</h4>
             <ul class="features-list">
                 <li>Business Communication</li>
@@ -360,7 +317,6 @@
         <span class="current-price" style="color: #e00000 !important;">6000 جنيه</span>
     </div>
 </div>
-
             <div class="action-button-wrapper">
                 <button class="enroll-now-btn" onclick="triggerEnrollmentModal('Business English', [
                     {label: 'Group', value: 'Group (8-10 أفراد)', price: '2500 جنيه'},
@@ -369,8 +325,6 @@
                 ])">اشترك الآن</button>
             </div>
         </div>
-
-        <!-- Speaking English for Teenagers Panel -->
         <div id="speaking-teenagers" class="content-display-panel">
             <div class="panel-meta">
                 <h3 class="panel-title">كورس  Teenagers :</h3>
@@ -378,7 +332,6 @@
 
                 <p>لو ابنك أو بنتك في المرحلة الإعدادية وعايزين يطوروا مهارة التحدث باللغة الإنجليزية بثقة وطلاقة، فـ Speaking English for Teenagers هو الاختيار المناسب.</p>
             </div>
-
             <h4 style="margin: 20px 0 10px 0; color: var(--primary-blue);">خلال الكورس هيتعلم الطالب:</h4>
             <ul class="features-list">
                 <li>التحدث باللغة الإنجليزية بطلاقة وثقة في المواقف اليومية المختلفة.</li>
@@ -389,7 +342,6 @@
                 <li>التعبير عن آرائه وأفكاره بطريقة صحيحة ومنظمة.</li>
                 <li>زيادة الثقة بالنفس أثناء التحدث داخل المدرسة أو الجامعة أو في أي موقف اجتماعي.</li>
             </ul>
-
             <h4 style="margin: 20px 0 10px 0; color: var(--primary-blue);">مميزات الكورس:</h4>
             <ul class="features-list">
                 <li>مجموعات صغيرة لضمان أكبر قدر من المشاركة.</li>
@@ -419,7 +371,6 @@
             </div>
         </div>
 
-        <!-- Section About Us -->
         <section class="about-card">
             <div class="about-layout">
                 <div>
@@ -532,10 +483,8 @@
             <a href="https://www.instagram.com/englishzone.s.c?utm_source=qr&igsh=MWRpajNnZDVpMDRsMw==" target="_blank" class="social-link-btn" style="background-color: #e1306c;"><i class="fab fa-instagram"></i></a>
             <a href="https://www.tiktok.com/@english.zone.sc?_r=1&_t=ZS-96vskjvZxS9" target="_blank" class="social-link-btn" style="background-color: #000000;"><i class="fab fa-tiktok"></i></a>
         </div>
-        <p style="font-size: 0.9rem; color: #94a3b8;">&copy; Designed by Ahmed Ehab : 01028371799</p>
+        <p style="font-size: 0.9rem; color: #94a3b8;">© Designed by Ahmed Ehab : 01028371799</p>
     </footer>
-
-    <!-- Fixed Floating Communication Controls -->
     <div class="sticky-dock-menu">
         <a href="https://wa.me/201018008845" target="_blank" class="dock-item wa-green" title="واتساب مباشر">
             <i class="fab fa-whatsapp"></i>
@@ -545,19 +494,16 @@
         </a>
     </div>
 
-    <!-- ✅ Booking Modal Layer - Updated -->
     <div class="modal-overlay" id="enrollmentModal">
         <div class="modal-body">
-            <span class="modal-close-trigger" onclick="dismissEnrollmentModal()">&times;</span>
+            <span class="modal-close-trigger" onclick="dismissEnrollmentModal()">×</span>
             <h3>طلب الانضمام والاشتراك</h3>
             
-            <!-- Course Name Display -->
             <div class="modal-course-name-display" id="modalCourseDisplay">
                 <i class="fas fa-graduation-cap"></i>
                 <span id="targetCourseLabel"></span>
             </div>
 
-            <!-- ✅ Options Area (for Adults & Online) -->
             <div class="modal-options-area" id="modalOptionsArea">
                 <div class="modal-options-title" id="modalOptionsTitle">
                     <i class="fas fa-list-check"></i>
@@ -575,7 +521,7 @@
                 <label for="studentAge">السن / العمر:</label>
                 <input type="number" id="studentAge" placeholder="مثال: 16">
             </div>
-            
+        
             <div class="input-wrapper">
                 <label for="contactPhone">رقم هاتف الطالب أو ولي الأمر:</label>
                 <input type="tel" id="contactPhone" placeholder="مثال: 010XXXXXXXX">
@@ -586,10 +532,6 @@
             </button>
         </div>
     </div>
-
-    <script src="script.js">
-    
-
-    </script>
+    <script src="script.js"> </script>
 </body>
 </html>
